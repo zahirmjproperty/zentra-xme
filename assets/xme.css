@@ -147,7 +147,7 @@ tr.sold td{opacity:1}
 /* ============ KONTRA TEKS (latar cerah dikekalkan; teks digelapkan) ============
    Punca: teks menggunakan warna tema gelap (putih/kelabu cerah/gold cerah) di atas
    latar CERAH style.css → tidak boleh dibaca. Semua teks kini gelap (≥4.5:1 WCAG AA). */
-.eyebrow{color:#8a6420 !important;font-size:12px;letter-spacing:.13em}
+.eyebrow{color:#75500e !important;font-size:12px;letter-spacing:.13em}
 .hero-loc{background:rgba(255,255,255,.86) !important;color:#5c440f !important}
 .hero-specs,.hero-specs *{color:#0d2036 !important}
 .hero-specs b,.hero-specs strong{color:#7a5a15 !important}
@@ -177,7 +177,9 @@ dt{color:#41546a}
 .tbl tbody tr:hover td{background:#fdf6e6}
 /* kekal legap pada kolum pertama semasa skrol mendatar */
 .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:#fff;z-index:3}
-.tbl thead th:first-child{z-index:5;background:#0b2340}
+.tbl thead th:first-child{z-index:5}
+.tbl thead th{background:#0b2340 !important;color:#f4dcab !important}
+.tbl thead th *{color:#f4dcab !important}
 /* butang & borang */
 .btn-ghost{background:#fff !important;color:#0d2036 !important;border-color:rgba(11,45,74,.35) !important}
 .btn-ghost:hover{background:#f2f6fa !important}
