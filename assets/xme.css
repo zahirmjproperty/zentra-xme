@@ -8,7 +8,7 @@
   font-size:12.5px;line-height:1.65;color:var(--text-muted);
   border-left:2px solid var(--border-gold);padding-left:12px;margin:16px 0 0;
 }
-.section.dark .xs-note{color:#9db3c8}
+.section.dark .xs-note{color:#4d6276}
 
 /* ---------- hero art ---------- */
 .hero .hero-media img{object-fit:cover;width:100%;height:100%}
@@ -32,7 +32,7 @@
 }
 .avail-summary .as b{display:block;font-size:26px;font-weight:800;color:#fff;line-height:1.1}
 .avail-summary .as span{display:block;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#a8bccd;margin-top:6px}
-.avail-summary .as i{display:block;font-style:normal;font-size:12.5px;color:var(--gold-light);margin-top:4px}
+.avail-summary .as i{display:block;font-style:normal;font-size:13px;color:#8a6420;margin-top:4px}
 @media(max-width:860px){.avail-summary{grid-template-columns:1fr 1fr}}
 @media(max-width:460px){.avail-summary{grid-template-columns:1fr}}
 
@@ -47,7 +47,7 @@
   border-radius:8px;padding:8px 10px;
 }
 .avail-tools .sel-wrap select option{color:#0d2036}
-.avail-count{font-size:12.5px;color:var(--gold-light);margin-left:auto}
+.avail-count{font-size:13px;color:#8a6420;margin-left:auto}
 
 /* ---------- table ---------- */
 .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid rgba(201,151,60,.28);border-radius:var(--radius-sm);background:rgba(255,255,255,.04)}
@@ -57,13 +57,13 @@
   position:sticky;top:0;background:#0b2340;color:#e7be69;font-size:11px;
   letter-spacing:.07em;text-transform:uppercase;z-index:2;border-bottom:1px solid rgba(201,151,60,.45);
 }
-.tbl td{color:#d3e1ef}
+.tbl td{color:#16283c}
 .tbl td.num,.tbl th.num{text-align:right;font-variant-numeric:tabular-nums}
 .tbl tbody tr:hover td{background:rgba(201,151,60,.07)}
-.tbl tr.sold td{color:#9fb4c8}
+.tbl tr.sold td{color:#55677a}
 .pill{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;padding:3px 9px;border-radius:999px}
-.pill.ok{background:rgba(52,211,153,.16);color:#8fe9bc;border:1px solid rgba(52,211,153,.45)}
-.pill.no{background:rgba(160,180,200,.14);color:#c9d8e7;border:1px solid rgba(160,180,200,.35)}
+.pill.ok{background:#d9f2e3;color:#0f5c37;border:1px solid #8ecfae}
+.pill.no{background:#e8edf3;color:#3b4c5e;border:1px solid #c2cedb}
 .table-scroll thead th{position:sticky;top:0;z-index:2}
 tr.sold td{opacity:1}
 
@@ -114,7 +114,7 @@ tr.sold td{opacity:1}
   color:var(--gold);font-size:19px;font-weight:400;line-height:1;
 }
 .faq details[open] summary::after{content:"–"}
-.faq .ans{padding:0 0 16px;font-size:13.5px;line-height:1.72;color:#c2d3e3}
+.faq .ans{padding:0 0 16px;font-size:14px;line-height:1.72;color:#33475c}
 
 /* ---------- misc ---------- */
 .foil{background:linear-gradient(92deg,#e7be69,#fff0c9 45%,#c9973c);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -124,17 +124,17 @@ tr.sold td{opacity:1}
 .gal img[src$=".svg"]{object-fit:contain;background:#eef3f8;padding:6px}
 
 /* dark sections: keep the type cards legible on navy */
-.section.dark .card{background:rgba(255,255,255,.06);border-color:rgba(201,151,60,.3)}
-.section.dark .card h3,.section.dark .card h4{color:#f2f7fb}
-.section.dark .card p{color:#c2d3e3}
-.section.dark .pt-code{color:var(--gold-light)}
+.section.dark .card{background:#fff;border-color:rgba(201,151,60,.3)}
+.section.dark .card h3,.section.dark .card h4{color:#0d2036}
+.section.dark .card p{color:#33475c}
+.section.dark .pt-code{color:#8a6420}
 .section.dark .pt-rows .pt-row{background:rgba(255,255,255,.05)}
 .section.dark .pt-row dt{color:#93a9bd}
 .section.dark .pt-row dd{color:#eaf2f9}
 .section.dark .feature-list li{color:#cfdded}
 .section.dark .sec-lead{color:#a8bccd}
 .section.dark .pk-list .pk{border-bottom-color:rgba(255,255,255,.1)}
-.section.dark .pk-list .pk h4{color:#f2f7fb}
+.section.dark .pk-list .pk h4{color:#0d2036}
 .section.dark .pk-list .pk p{color:#b3c6d8}
 .pin-tags{justify-content:flex-start}
 
@@ -144,94 +144,44 @@ tr.sold td{opacity:1}
 .section.dark .card.form-card label{color:var(--text)}
 .calc-out .row.big span:last-child{color:#8a6420}
 
-/* ================= THEME LOCK — page is dark throughout =================
-   Punca asal: asas style.css bertema cerah (body #f7f9fc, section putih) manakala
-   xme.css menjangka latar gelap → teks cerah atas putih = tidak boleh dibaca.
-   Blok ini mengunci tema gelap untuk SEMUA bahagian dan menaikkan kontras WCAG AA. */
-html,body{background:#071525 !important;color:#e4edf6 !important}
-body{background-image:
-  radial-gradient(circle at 12% 6%, rgba(31,73,120,.55), transparent 46%),
-  radial-gradient(circle at 88% 4%, rgba(201,151,60,.12), transparent 40%),
-  linear-gradient(180deg,#071525 0%,#0a1b2e 55%,#071525 100%) !important}
-section,.section,main,article,aside,div.panel,.card,.box{background-color:transparent}
-section,.section{color:#e4edf6}
-section.alt,.section.alt{background-color:rgba(255,255,255,.022) !important}
-.section.light,.section.white{background-color:rgba(255,255,255,.022) !important}
-
-/* --- jadual ketersediaan --- */
-.table-scroll{background:rgba(255,255,255,.04) !important;border-color:rgba(201,151,60,.32) !important}
-.tbl th,.tbl td{border-bottom:1px solid rgba(255,255,255,.09)}
-.tbl thead th{background:#0b2340;color:#e7be69;font-size:12px;letter-spacing:.05em}
-.tbl td{color:#d3e1ef}
-.tbl tbody tr:nth-child(even) td{background:rgba(255,255,255,.022)}
-.tbl tbody tr:hover td{background:rgba(201,151,60,.08)}
-.tbl tr.sold td{color:#a8bccf}
-.tbl tr.sold td:first-child{text-decoration:line-through;text-decoration-color:rgba(168,188,207,.55)}
-/* kolum pertama melekat semasa skrol mendatar (mudah alih) */
-.tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:#0b1d30;z-index:3}
-.tbl thead th:first-child{z-index:5}
-
-/* --- pil status --- */
-.pill{font-size:12px;padding:4px 10px;line-height:1.25}
-.pill.ok{background:rgba(52,211,153,.18) !important;color:#94ecbf !important;border:1px solid rgba(52,211,153,.5) !important}
-.pill.no{background:rgba(160,180,200,.16) !important;color:#cddbe8 !important;border:1px solid rgba(160,180,200,.4) !important}
-
-/* --- teks kecil / label --- */
-.eyebrow{color:#e0c68f !important;font-size:12px;letter-spacing:.14em}
-.conn-t{color:#b7cadd !important;font-size:13px}
-.conn-n{color:#e0c68f !important}
-small,.foot small,.site-header small,footer small{color:#c3d3e2 !important;font-size:12px !important}
-p,li,dd,span,label{color:#dbe7f2}
-dt{color:#b9cbdd}
-a{color:#e0c68f}
-/* butang hantu (ghost) */
-.btn-ghost{color:#e4edf6 !important;border-color:rgba(228,237,246,.5) !important;background:rgba(255,255,255,.04) !important}
-.btn-ghost:hover{background:rgba(255,255,255,.1) !important}
-
-/* --- kawalan borang / penapis --- */
+/* ============ KONTRA TEKS (latar cerah dikekalkan; teks digelapkan) ============
+   Punca: teks menggunakan warna tema gelap (putih/kelabu cerah/gold cerah) di atas
+   latar CERAH style.css → tidak boleh dibaca. Semua teks kini gelap (≥4.5:1 WCAG AA). */
+.eyebrow{color:#8a6420 !important;font-size:12px;letter-spacing:.13em}
+.hero-loc{background:rgba(255,255,255,.86) !important;color:#5c440f !important}
+.hero-specs,.hero-specs *{color:#0d2036 !important}
+.hero-specs b,.hero-specs strong{color:#7a5a15 !important}
+.badge{background:rgba(255,255,255,.94) !important}
+.badge small,.badge span{color:#41546a !important}
+.badge strong,.badge b{color:#0d2036 !important}
+small,footer small,.mcta small{color:#41546a !important;font-size:12px !important}
+.hb-s{color:#55606e !important}
+.conn-k{color:#8a6420 !important;font-size:12.5px}
+.conn-t{color:#41546a !important;font-size:13px}
+.conn-n{color:#0b2d4a !important;font-size:13px}
+.gal-item{background:#eef3f8 !important}
+.gal-item .cap,.gal-item figcaption,.gal-item span{color:#33475c !important}
+.plan-stage,.map-box{background:#fff !important}
+.plan-stage *,.map-box *{color:#33475c}
+.plan-stage h3,.plan-stage h4,.map-box h3,.map-box h4{color:#0d2036 !important}
+.tick{background:#f7e7bf !important;color:#7a5a15 !important;border:1px solid rgba(201,151,60,.45)}
+.lb{background:rgba(247,249,252,.97) !important}
+.lb button,.lb .lb-close,.lb span{color:#0d2036 !important}
+.pt-row{background:#eef3f8 !important}
+.pt-row *{color:#16283c !important}
+.pt-code,.pt-row strong{color:#8a6420 !important}
+p,li,dd,span,label{color:#33475c}
+h1,h2,h3,h4,h5,dt,th{color:#0d2036}
+dt{color:#41546a}
+.tbl tbody tr:nth-child(even) td{background:#f5f8fb}
+.tbl tbody tr:hover td{background:#fdf6e6}
+/* kekal legap pada kolum pertama semasa skrol mendatar */
+.tbl th:first-child,.tbl td:first-child{position:sticky;left:0;background:#fff;z-index:3}
+.tbl thead th:first-child{z-index:5;background:#0b2340}
+/* butang & borang */
+.btn-ghost{background:#fff !important;color:#0d2036 !important;border-color:rgba(11,45,74,.35) !important}
+.btn-ghost:hover{background:#f2f6fa !important}
 select,input[type=text],input[type=search],input[type=email],input[type=tel],textarea{
-  background:#0b1d30 !important;color:#e4edf6 !important;border:1px solid rgba(201,151,60,.35) !important}
-select option{background:#0b1d30;color:#e4edf6}
-input::placeholder,textarea::placeholder{color:#9fb4c8}
-.avail-tools,.avail-summary,.summary,.filters{color:#dbe7f2}
-
-/* --- kad / panel --- */
-.card,.panel,.box{background:rgba(255,255,255,.055) !important;border:1px solid rgba(201,151,60,.28) !important}
-.card h3,.card h4,.panel h3{color:#f2f7fb !important}
-.card p,.panel p{color:#cbdcec !important}
-/* =============== END THEME LOCK =============== */
-
-/* ============ BRIGHT SURFACE OVERRIDES (dijana dari DOM) ============
-select option{background:#0b1d30 !important;color:#e4edf6 !important}
-div.pt-row{background:rgba(255,255,255,.055) !important;border:1px solid rgba(201,151,60,.18) !important}
-.pt-row *{color:#dbe7f2 !important}
-.pt-code,.pt-row strong{color:#e0c68f !important}
-section.section.dark{background:transparent !important;background-color:transparent !important}
-span.tick{background:rgba(52,211,153,.18) !important;border:1px solid rgba(52,211,153,.42) !important}
-span.tick,span.tick *{color:#8fe9bc !important}
-div.conn{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-div.hb{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-.gal-item img,.map-box img,.plan-stage img,.about-img img{background:transparent !important;border-color:rgba(201,151,60,.22) !important}
-section.section{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-a.gal-item{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-header#nav.nav{background:rgba(7,21,37,.9) !important;backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,151,60,.28) !important}
-header#nav.nav a,header#nav.nav span,header#nav.nav small{color:#e4edf6 !important}
-div#drawer.drawer{background:#08192b !important;border-left:1px solid rgba(201,151,60,.28) !important}
-div#drawer.drawer a,div#drawer.drawer span{color:#e4edf6 !important}
-span.hero-loc.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-span.hero-loc.rv,span.hero-loc.rv *{color:#dbe7f2 !important}
-div.hero-specs{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-div.about-img.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-div.badge{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-button.tab{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-button.tab,button.tab *{color:#dbe7f2 !important}
-div.plan-stage.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-div.map-box.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-a.gal-item.wide{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-a.gal-item.tall{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-div.mcta{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
-div.lb{background:rgba(4,12,22,.93) !important;backdrop-filter:blur(6px)}
-/* kolum pertama jadual kekal legap supaya tidak bertindih semasa skrol mendatar */
-.tbl td:first-child,.tbl th:first-child{background:#0b1d30 !important}
-/* gaya pakej (pt-row) */
-/* ============ END BRIGHT SURFACE OVERRIDES ============ */
+  background:#fff !important;color:#0d2036 !important;border:1px solid rgba(11,45,74,.25) !important}
+input::placeholder,textarea::placeholder{color:#5c6f83}
+/* ============ END KONTRA TEKS ============ */
