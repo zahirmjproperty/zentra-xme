@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="Aerial impression of the industrial park layout">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071b33"/><stop offset="60%" stop-color="#0e2b4a"/><stop offset="100%" stop-color="#16375c"/>
+    </linearGradient>
+    <linearGradient id="facade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1c4a75"/><stop offset="100%" stop-color="#123b5f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12304a"/><stop offset="100%" stop-color="#0a1e33"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0c68f"/><stop offset="100%" stop-color="#c8a96a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fc8f0"/><stop offset="100%" stop-color="#2a6b96"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="620" fill="url(#sky)"/>
+  <rect y="380" width="1200" height="240" fill="url(#ground)"/>
+  <!-- spine road -->
+  <path d="M0 470 H1200" stroke="#0b2540" stroke-width="54"/>
+  <path d="M0 470 H1200" stroke="#e0c68f" stroke-width="2" stroke-dasharray="18 16" opacity=".55"/>
+  <!-- secondary roads -->
+  <path d="M250 402 V620 M560 402 V620 M880 402 V620" stroke="#0b2540" stroke-width="30"/>
+  <!-- parks: rows of factories -->
+  <g fill="url(#facade)" stroke="#2b6ea3" stroke-width="1.5">
+    <rect x="60" y="404" width="150" height="58" rx="3"/><rect x="300" y="404" width="200" height="58" rx="3"/>
+    <rect x="600" y="404" width="230" height="58" rx="3"/><rect x="930" y="404" width="180" height="58" rx="3"/>
+    <rect x="60" y="516" width="150" height="66" rx="3"/><rect x="300" y="516" width="200" height="66" rx="3"/>
+    <rect x="600" y="516" width="230" height="66" rx="3"/><rect x="930" y="516" width="180" height="66" rx="3"/>
+  </g>
+  <!-- roof detail lines -->
+  <g stroke="#3d86bb" stroke-width="1" opacity=".8">
+    <path d="M80 412 H190 M80 424 H190 M80 436 H190 M320 412 H480 M320 424 H480 M320 436 H480 M620 412 H810 M620 424 H810 M620 436 H810 M950 412 H1090 M950 424 H1090 M950 436 H1090"/>
+    <path d="M80 526 H190 M80 540 H190 M80 554 H190 M320 526 H480 M320 540 H480 M320 554 H480 M620 526 H810 M620 540 H810 M620 554 H810 M950 526 H1090 M950 540 H1090 M950 554 H1090"/>
+  </g>
+  <!-- loading bays -->
+  <g fill="url(#gold)" opacity=".85">
+    <rect x="86" y="466" width="26" height="14" rx="2"/><rect x="126" y="466" width="26" height="14" rx="2"/><rect x="166" y="466" width="26" height="14" rx="2"/>
+    <rect x="330" y="466" width="26" height="14" rx="2"/><rect x="380" y="466" width="26" height="14" rx="2"/><rect x="430" y="466" width="26" height="14" rx="2"/>
+    <rect x="640" y="466" width="26" height="14" rx="2"/><rect x="700" y="466" width="26" height="14" rx="2"/><rect x="760" y="466" width="26" height="14" rx="2"/>
+    <rect x="960" y="466" width="26" height="14" rx="2"/><rect x="1020" y="466" width="26" height="14" rx="2"/>
+  </g>
+  <!-- lake garden -->
+  <path d="M120 250 c70 -26 150 -18 210 6 c40 16 30 52 -18 62 c-70 15 -170 -6 -196 -32 c-14 -14 -8 -30 4 -36 z" fill="#123b5f" stroke="#3d86bb" stroke-width="2" opacity=".95"/>
+  <path d="M150 268 c50 -14 108 -8 152 8" stroke="#7fc8f0" stroke-width="2" fill="none" opacity=".5"/>
+  <!-- greenery -->
+  <g fill="#1d5c4a" opacity=".9">
+    <circle cx="360" cy="230" r="15"/><circle cx="394" cy="216" r="11"/><circle cx="330" cy="212" r="12"/>
+    <circle cx="700" cy="238" r="14"/><circle cx="736" cy="222" r="10"/><circle cx="670" cy="220" r="11"/>
+    <circle cx="960" cy="246" r="16"/><circle cx="1000" cy="230" r="12"/><circle cx="930" cy="228" r="10"/>
+    <circle cx="520" cy="196" r="12"/><circle cx="556" cy="184" r="9"/>
+  </g>
+  <!-- legend: highway -->
+  <g font-family="Inter, Arial, sans-serif" font-size="17" fill="#cfe3f5">
+    <rect x="884" y="26" width="286" height="86" rx="8" fill="#071b33" opacity=".72" stroke="#2b6ea3"/>
+    <text x="902" y="54">NSE / PLUS mainline</text>
+    <text x="902" y="78" fill="#e0c68f">Nilai toll plaza — adjacent</text>
+    <text x="902" y="100" fill="#9fc0da" font-size="14">Indicative layout, not to scale</text>
+  </g>
+  <rect x="0" y="470" width="1200" height="2" fill="#e0c68f" opacity=".18"/>
+</svg>

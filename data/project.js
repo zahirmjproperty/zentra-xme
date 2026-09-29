@@ -161,9 +161,9 @@ const connectivity = [
 
 /* ---- Gallery (illustrative imagery — see caption note) ---- */
 const gallery = [
-  { src: "assets/img/render-aerial.jpg", cap: "Aerial impression — industrial park layout (illustration)" },
-  { src: "assets/img/render-front.jpg", cap: "Factory frontage impression (illustration)" },
-  { src: "assets/img/render-interior.jpg", cap: "Triple-volume warehouse impression (illustration)" },
+  { src: "assets/img/render-aerial.svg", cap: "Aerial impression — industrial park layout (illustration, not to scale)" },
+  { src: "assets/img/render-front.svg", cap: "Factory frontage impression — 9 m clear height, covered loading (illustration)" },
+  { src: "assets/img/render-interior.svg", cap: "Triple-volume warehouse interior impression (illustration)" },
   { src: "assets/img/site-plan.svg", cap: "Indicative site plan — Phase 3B (illustration, not to scale)" }
 ];
 

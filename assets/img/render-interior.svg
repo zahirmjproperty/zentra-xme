@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="Triple-volume warehouse interior impression">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071b33"/><stop offset="60%" stop-color="#0e2b4a"/><stop offset="100%" stop-color="#16375c"/>
+    </linearGradient>
+    <linearGradient id="facade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1c4a75"/><stop offset="100%" stop-color="#123b5f"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12304a"/><stop offset="100%" stop-color="#0a1e33"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0c68f"/><stop offset="100%" stop-color="#c8a96a"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7fc8f0"/><stop offset="100%" stop-color="#2a6b96"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="620" fill="#071b33"/>
+  <!-- floor -->
+  <path d="M60 520 H1140 L1000 400 H200 Z" fill="#12304a"/>
+  <g stroke="#223f5e" stroke-width="1" opacity=".7">
+    <path d="M120 512 L240 404 M300 512 L360 404 M480 512 L480 404 M660 512 L600 404 M840 512 L720 404 M1020 512 L840 404"/>
+  </g>
+  <!-- side walls -->
+  <path d="M200 400 V120 H1000 V400" fill="none" stroke="#2b6ea3" stroke-width="3"/>
+  <path d="M200 400 V120 L60 240 V520 Z" fill="#0f3355" stroke="#2b6ea3" stroke-width="2"/>
+  <path d="M1000 400 V120 L1140 240 V520 Z" fill="#0b2540" stroke="#2b6ea3" stroke-width="2"/>
+  <!-- roof with skylights -->
+  <path d="M200 120 L1000 120 L1140 240 H60 Z" fill="#0a1e33" stroke="#2b6ea3" stroke-width="2"/>
+  <g fill="url(#glass)" opacity=".75">
+    <path d="M300 132 H420 L440 176 H280 Z"/><path d="M470 132 H590 L610 176 H450 Z"/><path d="M640 132 H760 L780 176 H620 Z"/><path d="M810 132 H930 L950 176 H790 Z"/>
+  </g>
+  <!-- clear-height arrow -->
+  <g stroke="#e0c68f" stroke-width="3" fill="none">
+    <path d="M1005 128 V512"/><path d="M995 140 L1005 128 L1015 140"/><path d="M995 500 L1005 512 L1015 500"/>
+  </g>
+  <text x="1020" y="300" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e0c68f">9 m clear</text>
+  <text x="1020" y="326" font-family="Inter, Arial, sans-serif" font-size="20" fill="#e0c68f">height</text>
+  <!-- racking -->
+  <g stroke="#3d86bb" stroke-width="3" fill="none">
+    <path d="M300 512 V300 M300 512 H560 M560 512 V300"/>
+    <path d="M300 432 H560 M300 372 H560 M300 318 H560"/>
+    <path d="M700 512 V330 M700 512 H940 M940 512 V330"/>
+    <path d="M700 448 H940 M700 390 H940 M700 344 H940"/>
+  </g>
+  <g fill="#1c4a75">
+    <rect x="308" y="384" width="52" height="46" rx="3"/><rect x="392" y="384" width="52" height="46" rx="3"/><rect x="476" y="384" width="52" height="46" rx="3"/>
+    <rect x="308" y="326" width="52" height="44" rx="3"/><rect x="392" y="326" width="52" height="44" rx="3"/>
+    <rect x="708" y="400" width="52" height="46" rx="3"/><rect x="792" y="400" width="52" height="46" rx="3"/><rect x="876" y="400" width="52" height="46" rx="3"/>
+    <rect x="708" y="346" width="52" height="42" rx="3"/><rect x="792" y="346" width="52" height="42" rx="3"/>
+  </g>
+  <!-- loading dock door with light -->
+  <rect x="596" y="330" width="96" height="182" fill="#0b2540" stroke="#3d86bb" stroke-width="2"/>
+  <path d="M596 330 L692 330 L760 400 L668 512 Z" fill="#cfe3f5" opacity=".12"/>
+  <g font-family="Inter, Arial, sans-serif" fill="#9fc0da">
+    <text x="60" y="576" font-size="18" fill="#e0c68f">Floor loading 10 kN/m² (upgradeable) · multiple loading bays</text>
+    <text x="60" y="602" font-size="15">Indicative interior impression — not an as-built drawing</text>
+  </g>
+</svg>
