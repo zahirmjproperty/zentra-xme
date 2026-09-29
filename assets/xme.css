@@ -200,3 +200,38 @@ input::placeholder,textarea::placeholder{color:#9fb4c8}
 .card h3,.card h4,.panel h3{color:#f2f7fb !important}
 .card p,.panel p{color:#cbdcec !important}
 /* =============== END THEME LOCK =============== */
+
+/* ============ BRIGHT SURFACE OVERRIDES (dijana dari DOM) ============
+select option{background:#0b1d30 !important;color:#e4edf6 !important}
+div.pt-row{background:rgba(255,255,255,.055) !important;border:1px solid rgba(201,151,60,.18) !important}
+.pt-row *{color:#dbe7f2 !important}
+.pt-code,.pt-row strong{color:#e0c68f !important}
+section.section.dark{background:transparent !important;background-color:transparent !important}
+span.tick{background:rgba(52,211,153,.18) !important;border:1px solid rgba(52,211,153,.42) !important}
+span.tick,span.tick *{color:#8fe9bc !important}
+div.conn{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+div.hb{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+.gal-item img,.map-box img,.plan-stage img,.about-img img{background:transparent !important;border-color:rgba(201,151,60,.22) !important}
+section.section{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+a.gal-item{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+header#nav.nav{background:rgba(7,21,37,.9) !important;backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,151,60,.28) !important}
+header#nav.nav a,header#nav.nav span,header#nav.nav small{color:#e4edf6 !important}
+div#drawer.drawer{background:#08192b !important;border-left:1px solid rgba(201,151,60,.28) !important}
+div#drawer.drawer a,div#drawer.drawer span{color:#e4edf6 !important}
+span.hero-loc.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+span.hero-loc.rv,span.hero-loc.rv *{color:#dbe7f2 !important}
+div.hero-specs{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+div.about-img.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+div.badge{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+button.tab{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+button.tab,button.tab *{color:#dbe7f2 !important}
+div.plan-stage.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+div.map-box.rv{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+a.gal-item.wide{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+a.gal-item.tall{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+div.mcta{background:rgba(255,255,255,.06) !important;border-color:rgba(201,151,60,.28) !important}
+div.lb{background:rgba(4,12,22,.93) !important;backdrop-filter:blur(6px)}
+/* kolum pertama jadual kekal legap supaya tidak bertindih semasa skrol mendatar */
+.tbl td:first-child,.tbl th:first-child{background:#0b1d30 !important}
+/* gaya pakej (pt-row) */
+/* ============ END BRIGHT SURFACE OVERRIDES ============ */
